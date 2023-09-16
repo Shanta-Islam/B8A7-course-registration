@@ -16,7 +16,7 @@ const Course = ({ course, handleSelectCourse }) => {
                 </div>
                 <div className='px-6 py-4 flex justify-between'>
                     <p>Price: {price}</p>
-                    <p>Credit: {credit}</p>
+                    <p>Credit: {credit}hr</p>
                 </div>
                 <div className="text-center m-5">
                     <button onClick={()=>handleSelectCourse(course)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg w-full'>Select</button>

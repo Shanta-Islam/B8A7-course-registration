@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 const CartContent = ({course}) => {
     return (
         <div>
-             <li>{course.title}</li>
+            <ul className='list-decimal'>
+                <li>{course.title}</li> 
+            </ul>
         </div>
     );
 };
