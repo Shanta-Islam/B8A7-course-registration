@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css'
 import Cart from './components/Cart/Cart'
 import Courses from './components/Courses/Courses'
+import toast , { Toaster } from 'react-hot-toast';
 
 function App() {
   const [selectedCourses, setSelectedCourses] = useState([]);
@@ -25,10 +26,10 @@ function App() {
       const totalRemaining = 20 - count;
       
       if (count > 20) {
-        return alert('no')
+        toast.error('credit will not take more than 20')
       }
       else if(remaining <0) {
-        return alert('remaining should not be less than 0')
+        return
       }
       else{
         setTotalCredit(count);
@@ -45,6 +46,7 @@ function App() {
       <div className='grid xl:grid-cols-[1fr_minmax(200px,_300px)] my-10'>
         <Courses handleSelectCourse={handleSelectCourse}></Courses>
         <Cart selectedCourses={selectedCourses} remaining={remaining} totalCredit={totalCredit} totalPrice={totalPrice}></Cart>
+        <Toaster/>
       </div>
     </>
   )
