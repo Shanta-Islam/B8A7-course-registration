@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const CartContent = ({course, index}) => {
+const CartContent = ({course, index}) => { 
     // console.log(index);
     return (
         <div>
