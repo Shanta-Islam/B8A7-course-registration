@@ -16,7 +16,7 @@ function App() {
     let count = course.credit;
     let priceCount = course.price;
     if (isExist) {
-      return
+      toast('Already added this course')
     }
     else {
       selectedCourses.forEach((item) => {
@@ -26,10 +26,10 @@ function App() {
       const totalRemaining = 20 - count;
       
       if (count > 20) {
-        toast.error('credit will not take more than 20')
+        toast('Credit will not take more than 20');
       }
-      else if(remaining <0) {
-        return
+      else if(remaining < 0) {
+        return;
       }
       else{
         setTotalCredit(count);
