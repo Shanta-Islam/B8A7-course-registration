@@ -10,4 +10,4 @@ In the project, you can see:
  
 ## How I manage the state
 
-I have managed the states in the parent div using lifting up concept and state value pass those components with props which was needed those props values.
+I have managed the states in the parent div using lifting up concept and state value pass those components with props which was needed those props values."# course-registration-assignment7" 
